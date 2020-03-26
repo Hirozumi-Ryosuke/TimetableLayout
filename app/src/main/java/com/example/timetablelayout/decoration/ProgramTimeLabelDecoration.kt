@@ -1,11 +1,13 @@
 package com.example.timetablelayout.decoration
 
 import android.content.Context
+import android.graphics.Color
 import androidx.core.content.ContextCompat
 import com.example.timetablelayout.R
-import java.time.LocalDate
+import com.example.timetablelayout.model.Program
 import java.time.LocalDateTime
 import java.time.Period
+import java.time.ZoneOffset
 import java.time.format.DateTimeFormatter
 
 class ProgramTimeLabelDecoration (context: Context, private val periods: List<Period>, heightPerMin: Int) :
